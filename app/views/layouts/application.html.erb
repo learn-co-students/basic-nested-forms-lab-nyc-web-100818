@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BasicNestedFormsLab</title>
+  <title>RECIPEZ</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body style= "font-family: 'Verdana'; background:beige; color:royalblue;">
+
+<h1 align="center">🍝🥘  RECIPES!  🥩🍳</h1>
 
 <%= yield %>
-
+<br><br><br>
+<%= link_to 'Home', recipes_path %>   ||   <%= link_to 'Add A Recipe!', new_recipe_path %>
 </body>
 </html>

@@ -1,6 +1,6 @@
-<h2> <%= @recipe.title %></h2>
+<h2 align="center"> <%= @recipe.title.titleize %></h2>
 
-<h3>Ingredients</h2>
+<h3><u>Ingredients</u> :</h3>
 
 <ul>
 <% @recipe.ingredients.each do |ingredient| %>
